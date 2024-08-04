@@ -1,0 +1,369 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+/*header en index.html*/
+
+body{
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    display: flex;
+    justify-content:space-around;
+    width: 100%;
+    height: 15vh;
+    align-items: center;  
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */    
+}
+
+h1{
+    background-color: rgb(255, 255, 255);
+    margin-left: -10px; 
+    color: rgb(6, 83, 80);  
+}
+
+a{
+    text-decoration: none;
+}
+
+.textoGanador{
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(6, 83, 80); 
+    font-weight: bold;
+}
+.novedades{
+    margin-left: 20rem;
+    text-decoration: none;
+    color: rgb(6, 83, 80);
+    font-weight: bold;
+    cursor: pointer;
+    
+}
+
+.carritoLogo{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    background-color: rgb(221, 86, 86);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+
+.carrito-contador{
+    text-align: center;
+    background-color:  rgb(221, 86, 86);
+    width: 10px;
+    cursor: pointer;
+    color: white;
+}
+
+.imgCarrito{
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+    cursor: pointer;
+    background-color:  rgb(221, 86, 86);
+}
+
+
+/* Maain en Index.html */
+
+.contenedorFotos{
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: rgb(255, 255, 255);
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.cardFotografia{
+    background-color:rgb(18, 102, 84);
+    color: white;
+    font-size: 13px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 5px;
+
+}
+
+.cardFotografia img{
+    width: 300px;
+    height: 250px;
+    object-fit: cover;
+    display: block;
+}
+
+
+button{
+    background-color: #16473c;
+    width: 150px;
+    height: 25px;
+    border: none;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    font-weight: 300;
+    cursor: pointer;
+    color: white;
+    border-radius: 5px;
+  }
+  
+    button:hover{
+    background-color: #153a36;
+    transform: scale(1.05);
+}
+
+
+/* CARRITO DE COMPRAS */
+
+.modoDeCierre{
+    color: red;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.disminuirBoton, .aumentarBoton{
+    background-color: #16473c;
+    border-radius: 100%;
+    width: 20px;
+    height: 20px;
+
+}
+
+.borrarFoto {
+    color: red;
+    font-weight: bold;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.modeloUnoCarrito{
+    display: none;
+    background-color: rgb(0, 0, 0,0.5);
+    position: fixed;
+    inset: 0;
+    z-index: 1;    
+}
+
+.modeloDosCarrito{
+    display: none;
+    border: 1.5px solid rgb(94, 93, 93);
+    padding: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 50%;
+    width: 100%;
+    z-index: 1;
+    max-height: 60vh;
+    overflow-y: auto;
+    background-color:white;
+    box-sizing: border-box;
+    overflow-x:hidden;
+}
+
+.fotoInCarrito{
+    display: flex;  
+    padding: 0.3rem;
+}
+
+.productImg{
+    border-radius: 5px;
+}
+
+
+.pagar{
+    background-color: red;
+}
+.pagar:hover{
+    background-color: #f40909;
+    transform: scale(1.05);
+}
+
+.foter-carrito{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.carritoConFotos{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    align-items: center;
+    justify-content:center;
+    text-align: center;
+    
+    
+
+}
+
+.modoDeCierre{
+    float: right;
+    cursor: pointer;
+}
+
+.tituloCarri{
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+}
+
+.precioTotal{
+    text-align: center;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+img{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+.fotoInCarrito{
+    width: 100%;
+}
+
+.carritoConFotos{
+    width: 100%;
+    justify-content: space-between
+
+}
+
+/* Footer en index.html */
+
+footer {   
+    background-color: white;
+    margin-top: auto;
+    text-align: center;
+    padding: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  }
+  
+  .Color_icon {
+    margin: 2rem;
+    color: #16473c;
+  }
+  
+  .Color_icon:hover {
+    transform: scale(1.1);
+  }
+
+
+
+/* PREMIOS */
+
+.premios{
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 14.4vh;
+}
+
+.ganadorPremio{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 65vh;
+    line-height: 2;
+    text-align: center;
+}
+
+
+.imgpremio{ 
+    width: auto;
+    height: 300px;
+}
+
+
+
+
+
+/* Media Queries responsive */
+
+@media (max-width: 768px) {
+    .imgpremio {
+        height: 200px; 
+    }
+}
+
+@media (max-width: 768px) {
+    .ganadorPremio {
+        flex-direction: column;
+        height: auto; 
+        padding: 20px; 
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .novedades {
+        margin-left: 0;
+    }
+
+    .contenedorFotos {
+        gap: 0.5rem;
+    }
+
+    .cardFotografia img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .carritoConFotos {
+        grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+    }
+
+    .img {
+        width: 80px;
+        height: 80px;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        justify-content: center;
+    }
+
+    .novedades {
+        margin-left: 0;
+    }
+
+    .cardFotografia {
+        font-size: 11px;
+    }
+
+    .carritoConFotos {
+        grid-template-columns: repeat(auto-fill, minmax(60px, 1fr));
+    }
+
+    img {
+        width: 60px;
+        height: 60px;
+    }
+
+    button {
+        width: 100px;
+        height: 20px;
+    }
+}
